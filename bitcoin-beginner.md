@@ -26,44 +26,63 @@ Follow these steps patiently and if you're unclear on anything, please ask.
 
 ## 1. Setup password manager
 
-1. Install KeePassX / KeePass 
-      Program | Platform | Current version
-      ---|---|---|---
-      KeePassX | **Mac** | v2.0.3 - [keepassx.org](https://www.keepassx.org/)
-      KeePassX | **Linux** | v2.0.3 - [source](https://github.com/keepassx/keepassx) (or v2.0.2 - `apt-get install keepassx`)
-      KeePass | **Windows** | v2.38 - [keepass.info](https://keepass.info/download.html)  
-    - mac/ linux/ win might look different, but they have the same functionality) 
+We're going to be working with really long secure passwords.
+Good news is, all you you need is an excellent password manager and it can remember all these long passwords.
+We will make this safe by setting up on one single single "Master Password" which you need to know to get into the password manager.
+
+If you've got questions as you go, check the FAQ at the bottom of this section
+
+**What you need for this section**:
+- Read over the steps before you start
+- 1 Master Password
+- The start of a security mindset - can someone else get into this? Can I get back into this?
+
+1. Install KeePassXC - https://keepassxc.org/download/ (subsequently I'll just call it KeePass)
 
 2. Open the software, start a new password database
-    - in the menu click `Database > New Database`
-
+    - Click `[ Ceate new database ]`
+    - (optional) see FAQ 'what is a database?'
+    ![](./assets/keepass-start.jpg)
+    ![](./assets/keepass-new-db.jpg)
     
-3. Choose a Master Password
+3. Choose your "Master Password"
     > Pay close attention, being lazy here will lose your money
+    - this is the one password you have to remember
     - Never use this password _anywhere online_
     - Never use this password _for anything else_
-    - Your passwod must be very secure 
-      - longer than 12 characters
-        - a line from your favourite poem or song
-        - a very random phrase, try [this **sweet tool**](https://www.rempe.us/diceware/).
-  
+    - Your passwod must be very hard for humans and computers to guess 
+      - use a line from a song or poem you like: e.g. "people say she's crazy she's got diamonds on the soles of her shoes"
+      - it needs to be very long
+    ![](./assets/keepass-master-pass.jpg)
 
-4. Save the password database
-    - in the menu click `Database > Save Database`
-    - put it somewhere safe
+4. Save a test password into the password manager, then retrieve it out
+    - This is to get you used to using KeePass AND to **prove to yourself that your setup is working**
+    - Save a password in:
+      1. click `Entries > Add new entry` in the menu
+      2. enter some test details (you need to enter the pass twice, you can click the eye to reveal the passwords). click `[ OK ]`
+      ![](./assets/keepass-test-entry.jpg)
+    - Get the password out:
+      1. right click on the new entry and copy the password. paste that password somewhere else to prove your password is in there ok
+        - e.g. mine comes out "bumble dumble test pass", so it's worked!
+      ![](./assets/keepass-test-entry-copy.jpg)
 
-5. Save a test password
-    - click `Entries > Add New Entry`
-    - Enter some details and click OK
-    ![](https://i.imgur.com/1c8xw9D.jpg)
-    - See the new entry, right click and see you can copy the password !
-    ![](https://i.imgur.com/RgQWGBP.jpg)
-
-6. Quit out of KeePass and log back in
-    - it will say you've made changes (our password), choose `Save`
+5. Prove you can close everything and then retreive the password again
+    - This is to force you to use your master password, and prove to yourself that you know how to do all this.
+    - Close KeePass
+    - Open Keepass (and enter your master password to unlock it and get in)
+    - Check you can still see that test password (e.g. copy it out)
 
 If you've got this all sorted, you're now ready to save your bitcoin passwords super securely!
 
+### FAQ
+
+- I've already got a password manager, can I just use that?
+  - No. This is our opinionated recommendation about the simplest safest starting point
+  - (advanced) yes perhaps, but we'd need to talk through the security. Please run with this to start with
+- What's a **database**?
+  - it's just a filing cabinet for storing things in! (In this case 'things' = data, like passwords)
+  - with KeePass the database is just a special file, e.g. 'mix_mmt.kdbx`. If you delete that file, all the passwords in it will be lost.
+  - KeePass lets you set up different databases, e.g. you might like to keep your work and personal passwords totally seperated. This is a more advanced case you don't need to worry about
 
 ## 2. Setup bitcoin wallet
 
