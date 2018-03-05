@@ -2,27 +2,29 @@
 
 This guide is a lite opinionated guide to getting a bitcoin setup with reasonable reliability established.
 
-If you want more detail please [see **in-depth guide**](https://docs.google.com/document/d/11fJfWa5a6FX8h-2zGI5ZZFm7bNKGN6L1wWhnfrUOMQg/edit#heading=h.q9r9wfywrj12) for more details.
-
-
 **What you will need:**
 
 - your own computer :computer: 
 - 5 people you trust :family: (to give backup details)
 - enough time :clock1: to follow steps slowly and not slip up
 
+If you want more detail please [see **in-depth guide**](https://docs.google.com/document/d/11fJfWa5a6FX8h-2zGI5ZZFm7bNKGN6L1wWhnfrUOMQg/edit#heading=h.q9r9wfywrj12) for more details.
+
+
 ## Overview of Steps
-
-Follow these steps patiently and if you're unclear on anything, please ask.
-
-**Note**:  :warning: = `this is a dangerous step, follow it exactly` 
-
 
 1. [Setup password manager](#1-Setup-password-manager)
 2. [Setup bitcoin wallet](#2-Setup-bitcoin-wallet)
 3. [Share backup of seed](#3-Share-backup-of-your-seed)
 4. [Security Audit](#4-Security-Audit)
 5. [Receive a small test payment](#5-Receive-a-small-test-payment)
+
+**Notes**
+  - if you're unclear on anything, please ask.
+  - :warning: = `this is a dangerous step, follow it exactly`
+  - if the images are too small, make the text on your browser bigger
+    - e.g. `ctrl + "+"` or `cmd + "+"`
+
 
 ## 1. Setup password manager
 
@@ -40,10 +42,11 @@ If you've got questions as you go, check the FAQ at the bottom of this section
 1. Install KeePassXC - https://keepassxc.org/download/ (subsequently I'll just call it KeePass)
 
 2. Open the software, start a new password database
-    - Click `[ Ceate new database ]`
-    - (optional) see FAQ 'what is a database?'
-    ![](./assets/keepass-start.jpg)
-    ![](./assets/keepass-new-db.jpg)
+    1. Click `[ Ceate new database ]`
+      - (optional) see FAQ 'what is a database?'
+      ![](./assets/keepass-start.jpg)
+    2. Give it a name that makes sense like "mix_mmt_passwords" and click `[ Save ]`
+      ![](./assets/keepass-new-db.jpg)
     
 3. Choose your "Master Password"
     > Pay close attention, being lazy here will lose your money
@@ -51,8 +54,9 @@ If you've got questions as you go, check the FAQ at the bottom of this section
     - Never use this password _anywhere online_
     - Never use this password _for anything else_
     - Your passwod must be very hard for humans and computers to guess 
-      - use a line from a song or poem you like: e.g. "people say she's crazy she's got diamonds on the soles of her shoes"
-      - it needs to be very long
+      - use a line from a song or poem you like 
+      - e.g. "people say she's crazy she's got diamonds on the soles of her shoes"
+      - yes make it quite long
     ![](./assets/keepass-master-pass.jpg)
 
 4. Save a test password into the password manager, then retrieve it out
@@ -62,14 +66,14 @@ If you've got questions as you go, check the FAQ at the bottom of this section
       2. enter some test details (you need to enter the pass twice, you can click the eye to reveal the passwords). click `[ OK ]`
       ![](./assets/keepass-test-entry.jpg)
     - Get the password out:
-      1. right click on the new entry and copy the password. paste that password somewhere else to prove your password is in there ok
-        - e.g. mine comes out "bumble dumble test pass", so it's worked!
+      - right click on the new entry and copy the password. paste that password somewhere else to prove your password is in there ok
+      - e.g. mine comes out "bumble dumble test pass", so it's worked!
       ![](./assets/keepass-test-entry-copy.jpg)
 
 5. Prove you can close everything and then retreive the password again
     - This is to force you to use your master password, and prove to yourself that you know how to do all this.
     - Close KeePass
-    - Open Keepass (and enter your master password to unlock it and get in)
+    - Open KeePass (and enter your master password to unlock it and get in)
     - Check you can still see that test password (e.g. copy it out)
 
 If you've got this all sorted, you're now ready to save your bitcoin passwords super securely!
