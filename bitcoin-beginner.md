@@ -13,11 +13,11 @@ If you want more detail please [see **in-depth guide**](https://docs.google.com/
 
 ## Overview of Steps
 
-1. [Setup password manager](#1-Setup-password-manager)
-2. [Setup bitcoin wallet](#2-Setup-bitcoin-wallet)
-3. [Share backup of seed](#3-Share-backup-of-your-seed)
-4. [Security Audit](#4-Security-Audit)
-5. [Receive a small test payment](#5-Receive-a-small-test-payment)
+1. [Setup password manager](#1-setup-password-manager)
+2. [Setup bitcoin wallet](#2-setup-bitcoin-wallet)
+3. [Share backup of seed](#3-share-backup-of-your-seed)
+4. [Security Audit](#4-security-audit)
+5. [Receive a small test payment](#5-receive-a-small-test-payment)
 
 **Notes**
   - if you're unclear on anything, please ask.
