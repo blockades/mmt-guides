@@ -33,7 +33,7 @@ We're going to be working with really long secure passwords.
 Good news is, all you you need is an excellent password manager and it can remember all these long passwords.
 We will make this safe by setting up on one single single "Master Password" which you need to know to get into the password manager.
 
-If you've got questions as you go, check the FAQ at the bottom of this section
+_Check the FAQ at the bottom of this section if you have more questions_
 
 **What you need for this section**:
 - Read over the steps before you start
@@ -43,6 +43,8 @@ If you've got questions as you go, check the FAQ at the bottom of this section
 1. **Install KeePassXC** 
 
     Get it from https://keepassxc.org/download/
+
+    You may have to give permission to open this application as it's not from an App Store. If you get a warning try clicking things like "More info" or "?" to get to the place where you can say "Allow KeePassXC"
 
 
 2. **Start a new password database**
@@ -68,12 +70,16 @@ If you've got questions as you go, check the FAQ at the bottom of this section
           - use a line from a song or poem you like 
             - e.g. _"people say she's crazy she's got diamonds on the soles of her shoes"_
           - yes make it quite long
+
+    1. Enter your new password (twice)
+    2. Press '[ okay ]'
     
     ![](./assets/keepass-master-pass.jpg)
 
 4. **Practice saving a password**
 
     This is to get you used to using KeePass AND to **prove to yourself that your setup is working**  - i.e. you can get your passwords out!
+    KeePass lets you make folders, a feature we don't need yet - the default base folder is called "Root"
     
     1. Save a password in:
         1. click `Entries > Add new entry` in the menu
@@ -94,7 +100,7 @@ If you've got questions as you go, check the FAQ at the bottom of this section
     Prove you can close everything and then retreive the password again. This is to force you to use your master password, and prove to yourself that you know how to do all this.
     
     1. Close KeePass
-    2. Open KeePass (and enter your master password to unlock it and get in)
+    2. Open KeePass (and enter your **master password** to unlock it and get in)
     3. Check you can still see that test password (e.g. copy it out)
 
 If you've got this all sorted, you're now ready to save your bitcoin passwords super securely!
@@ -110,33 +116,109 @@ Q: What's a **database**?
   - with KeePass the database is just a special file, e.g. 'mix_mmt.kdbx`. If you delete that file, all the passwords in it will be lost.
   - KeePass lets you set up different databases, e.g. you might like to keep your work and personal passwords totally seperated. This is a more advanced case you don't need to worry about
 
+
+---
+
 ## 2. Setup bitcoin wallet
 
 We're now goint to install the wallet that holds your actual bitcoin.
-You wallet will be 'grown' from a **Seed** - a special string of words which can be used to recreate everything about your wallet if you lose it. (This is essentially your "private key").
+Here's a bit of an overview of what the follow steps are about:
 
---> ** Dan: The seed is what grows your wallet. A wallet may contain many private keys**
---> ** Dan: For organisations we may also propose that a multisig wallet is actually the way to go, this would mean 2/3 or 3/5 or 5/7 signatories needed to spend funds... **
+    - our final state is a bitcoin wallet. Your wallet will be protected by a **"wallet password"** - this gives access to the wallet
 
-1. Install the Electrum wallet - [electrum.org/#download](https://electrum.org/#download) 
+    ![](./assets/wallet-intro-pass.jpg)
 
-2. Start Electrum, and enter a name for your wallet
-3. Select:  `Standard Wallet`, then `Create a new seed`, then `SegWit`
-4. :warning: Make a new KeePass entry for the **Seed** phrase (string of words that's been generated)
-    - open KeePass, and follow steps above used to make a `New Entry`
-    - call the entry `Electrum Seed`, and paste the seed in as the password
-5. Go to the next step and pass it by copying your the password from KeePass
-    - right click on the password, select `copy password`
-6. Make a password to encrypt your wallet
-    - make a long password with https://www.rempe.us/diceware/#eff
-    - save the password as `Electrum Password` in KeyPass
-    - copy that password, enter it in Electrum, selecting `encrypt wallet`
-7. Check you got everything saved right!
-    - quit Electrum wallet, and open it again
-    - use the `Electrum password` saved in KeePass
+    - we will also have a backup for our wallet
+        - it turns out wallets can be _grown_ from a **"seed"** (a special sentence)
+        - if we ever lose our wallet, we can just regrow it from the seed (and because bitcoin is pretty special, regrowing our wallet resotores the wallet to its last state, i.e. with the money in it!)
 
+    ![](./assets/wallet-into-seed.jpg)
+
+    - finally, this "wallet password" and "wallet seed" are really long, and we don't want to remember them, so we use KeePass to remember them!
+      - reminder: the only password you need to remember is the **master password** that gets you into KeePass
+
+    ![](./assets/wallet-intro-backups.jpg)
+
+Check the FAQ at the end of this section for other questions.
+
+1. **Install the Electrum wallet**
+
+    - get it from [electrum.org/#download](https://electrum.org/#download) 
+
+2. **Start Electrum**, and enter a name for your wallet
+
+    ![](./assets/wallet-new.jpg)
+
+3. **Choose these setup options**: 
+
+    - pick "Standard Wallet", click `[ Next ]`
+    - pick "Create a new seed", click `[ Next ]`
+    - pick "Segwit", click `[ Next ]`
+    - read step 4 (our instructions are different that the wallets)
+
+4. **Backup your seed**
+    
+    (see notes at the top of this section about what a seed is)
+
+    1. Copy the seed by selecting it, right-clicking and selection "Copy"
+    
+    ![](./assets/wallet-seed.jpg)
+
+    2. Save this seed as a new new entry in KeePass
+      - call the entry **Electrum Seed**
+      - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
+
+    3. Once you've done this, click `[ Next ]` in the wallet setup
+
+5. **Use your seed backup**
+    
+    :warning: This step is about confirming we've save our seed correctly.
+    If you don't save your backup correctly, you will not be able to recover your wallet if anything goes wrong.
+
+    1. In KeePass, right click on your new entry called "Electrum Seed" and select "Copy password"
+    2. In the wallet setup, paste this password into the box to "Confirm Seed"
+    3. Click `[ Next ]`
+
+    ![](./assets/wallet-seed-backup.jpg)
+
+6. **Set a wallet password**
+
+    You're asked to enter a password for your wallet. We're going to get a site to make us a complex password (we won't need to memorise it)
+    1. Generate a long password with https://www.rempe.us/diceware/#eff
+    2. Save the password as a new entry in KeePass
+      - call the entry **Electrum Password**
+      - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
+    3. right click on the entry in KeePass and copy the password
+    4. Paste this into the wallet password field (and a second time to confirm the password)
+    5. if you see "encrypt wallet", make sure it's checked
+    6. click `[  ]`
+
+    You should now be in your new wallet.
+
+7. **Check you got everything saved right!**
+
+    Before we start moving money, we need to check we can close everyhing and get back in again.
+
+    1. Quit out of Electrum wallet, and out of KeePass
+    2. Open your waller again
+        - launch electrum
+        - remember you stored your **wallet password** in your password manager
+        - open KeePass and sign in with your **master password**
+        - copy the password out of KeePass and use it to unlock your wallet
+
+### FAQ
+
+Q: **Why do I need to install a wallet, can't I just use coinbase?**
+  - with coinbase, your wallet actually lives on their servers, putting control in the hands of the people running those computers
+  - in the history of bitcoin so far it's been fairly common for these servers to get hacked and for everyone using them to loose all their bitcoin.
+  - by holding the wallet ourself, we learn about what's involved behind the scenes, and are better protected from theft
+
+
+---
 
 ## 3. Share backup of your seed
+
+:warning: **NOTE** :warning: - this section will get a revision with a more secure offline solution
 
 So you've got this Seed - a phrase from which you can regrow your wallet. We need to protect your organisation against the eventuality that you get hit by a bus (OR your computer is lost).
 
