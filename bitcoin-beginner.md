@@ -124,20 +124,20 @@ Q: What's a **database**?
 We're now goint to install the wallet that holds your actual bitcoin.
 Here's a bit of an overview of what the follow steps are about:
 
-    - our final state is a bitcoin wallet. Your wallet will be protected by a **"wallet password"** - this gives access to the wallet
+  - Our final state is a bitcoin wallet, protected by a **wallet password** - this gives access to the wallet
 
-    ![](./assets/wallet-intro-pass.jpg)
+  ![](./assets/wallet-intro-pass.jpg)
 
-    - we will also have a backup for our wallet
-        - it turns out wallets can be _grown_ from a **"seed"** (a special sentence)
-        - if we ever lose our wallet, we can just regrow it from the seed (and because bitcoin is pretty special, regrowing our wallet resotores the wallet to its last state, i.e. with the money in it!)
+  - We will also have a backup for our wallet
+    - it turns out wallets can be _grown_ from a **seed** (a special sentence)
+    - if we ever lose our wallet, we can just regrow it from the seed (and because bitcoin is pretty special, regrowing our wallet resotores the wallet to its last state, i.e. with the money in it!)
 
-    ![](./assets/wallet-into-seed.jpg)
+  ![](./assets/wallet-intro-seed.jpg)
 
-    - finally, this "wallet password" and "wallet seed" are really long, and we don't want to remember them, so we use KeePass to remember them!
-      - reminder: the only password you need to remember is the **master password** that gets you into KeePass
+  - Finally, this **wallet password** and **wallet seed** are really long, and we don't want to remember them, so we use KeePass to remember them!
+    - reminder: the only password you need to remember is the **master password** that gets you into KeePass
 
-    ![](./assets/wallet-intro-backups.jpg)
+  ![](./assets/wallet-intro-backups.jpg)
 
 Check the FAQ at the end of this section for other questions.
 
@@ -165,8 +165,8 @@ Check the FAQ at the end of this section for other questions.
     ![](./assets/wallet-seed.jpg)
 
     2. Save this seed as a new new entry in KeePass
-      - call the entry **Electrum Seed**
-      - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
+        - call the entry **Electrum Seed**
+        - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
 
     3. Once you've done this, click `[ Next ]` in the wallet setup
 
@@ -186,8 +186,8 @@ Check the FAQ at the end of this section for other questions.
     You're asked to enter a password for your wallet. We're going to get a site to make us a complex password (we won't need to memorise it)
     1. Generate a long password with https://www.rempe.us/diceware/#eff
     2. Save the password as a new entry in KeePass
-      - call the entry **Electrum Password**
-      - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
+        - call the entry **Electrum Password**
+        - refer to "Practice savings a password" (Section 1, step 4) if you want to revise how to do this
     3. right click on the entry in KeePass and copy the password
     4. Paste this into the wallet password field (and a second time to confirm the password)
     5. if you see "encrypt wallet", make sure it's checked
@@ -200,8 +200,8 @@ Check the FAQ at the end of this section for other questions.
     Before we start moving money, we need to check we can close everyhing and get back in again.
 
     1. Quit out of Electrum wallet, and out of KeePass
-    2. Open your waller again
-        - launch electrum
+    2. Open your wallet again
+        - launch Electrum
         - remember you stored your **wallet password** in your password manager
         - open KeePass and sign in with your **master password**
         - copy the password out of KeePass and use it to unlock your wallet
