@@ -68,7 +68,7 @@ If you've got questions as you go, check the FAQ at the bottom of this section
       ![](./assets/keepass-test-entry.jpg)
     - Get the password out:
       - right click on the new entry and copy the password. paste that password somewhere else to prove your password is in there ok
-      - e.g. mine comes out "bumble dumble test pass", so it's worked!
+      - e.g. mine comes out "bimbple bumble test pass", so it's worked!
       ![](./assets/keepass-test-entry-copy.jpg)
 
 5. Prove you can close everything and then retreive the password again
