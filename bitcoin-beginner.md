@@ -218,7 +218,7 @@ Q: **Why do I need to install a wallet, can't I just use coinbase?**
 
 ## 3. Share backup of your seed
 
-:warning: **NOTE** :warning: - this section will get a revision with a more secure offline solution
+> :warning: **NOTE** :warning: - this section will get a revision with a more secure offline solution
 
 So you've got this Seed - a phrase from which you can regrow your wallet. We need to protect your organisation against the eventuality that you get hit by a bus (OR your computer is lost).
 
