@@ -39,16 +39,17 @@ If you've got questions as you go, check the FAQ at the bottom of this section
 - 1 Master Password
 - The start of a security mindset - can someone else get into this? Can I get back into this?
 
-1. Install KeePassXC - https://keepassxc.org/download/ (subsequently I'll just call it KeePass)
+1. **Install KeePassXC** 
+    - https://keepassxc.org/download/
 
-2. Open the software, start a new password database
-    1. Click `[ Ceate new database ]`
+2. **Start a new password database**
+    1. Open KeePass, and lick `[ Ceate new database ]`
       - (optional) see FAQ 'what is a database?'
       ![](./assets/keepass-start.jpg)
     2. Give it a name that makes sense like "mix_mmt_passwords" and click `[ Save ]`
       ![](./assets/keepass-new-db.jpg)
     
-3. Choose your "Master Password"
+3. **Choose your "Master Password"**
     > Pay close attention, being lazy here will lose your money
     - this is the one password you have to remember
     - Never use this password _anywhere online_
@@ -59,8 +60,8 @@ If you've got questions as you go, check the FAQ at the bottom of this section
       - yes make it quite long
     ![](./assets/keepass-master-pass.jpg)
 
-4. Save a test password into the password manager, then retrieve it out
-    - This is to get you used to using KeePass AND to **prove to yourself that your setup is working**
+4. **Practice saving a password**
+    - This is to get you used to using KeePass AND to **prove to yourself that your setup is working** (you can get your passwords out!)
     - Save a password in:
       1. click `Entries > Add new entry` in the menu
       2. enter some test details (you need to enter the pass twice, you can click the eye to reveal the passwords). click `[ OK ]`
