@@ -10,5 +10,6 @@ For a map of all MMT resources, check out: https://github.com/blockades/mmt_reso
 guide | description
 :---|:---
 [bitcoin-beginner](./bitcoin-beginner.md) | our opinionated starting point for really managing your own bitcoin
+[DRAFT: bitcoin-multisig-beginner](./bitcoin-multisig-beginner.md) | our opinionated point for setting up a multisig bitcoin wallet
 
 
