@@ -6,6 +6,21 @@
   - :warning: = `this is a dangerous step, follow it exactly`
   - if the images are too small, make the text on your browser bigger
     - e.g. `ctrl + "+"` or `cmd + "+"`
+    
+**Assumptions**
+
+- The group of people setting up this multisig wallet will be unable to physically meet up.
+- The group of people setting up this multisig wallet will be unable to run through the setup process synchronously (at the same time over phone / skype / etc )
+
+**Overview**
+
+This process will happen in **four** main stages
+  1. An individual runs through the establishment of a new multisig wallet up to the point they generate their own seeds / master key. They will then be able to **close** their electrum wallet.
+  2. All individuals in the group run through the process individually to generate and then **share** their seeds/master keys privately with the group.
+  3. Once all master keys/seeds have been gathered privately within the group each individual can run through the entire process this time inputting all master keys / seeds.
+  4. Once everyone has set up their wallets there is a check to make sure everyone is seeing the same bitcoin addresses. If so, the group has successfully run established a collectively governed and owned multisig electrum wallet.
+  
+  ---
 
 
 Electrum has a pretty good GUI for making a multi-sig wallet. It seems designed for synchronous usage, but we can do it asynchronously by making multiple passes - first, to create your wallet seed (and familiarize yourself with the options), and then later, after we exchange public keys, to create the wallet. Here are instructions:
