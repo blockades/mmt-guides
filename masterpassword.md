@@ -7,7 +7,9 @@ This guide is an opinionated guide to getting started with a password manager. W
 Other password managers like KeePassX or 1Pass require you to store a password database. Unlike these, MasterPassword uses cryptography to magically recover your unique passwords based on 3 main conditions.
 
 Your name -- e.g. _Rumplestiltskin_ :imp:
+
 Your master passphrase -- e.g. `mysupersecretmasterpassphrase`
+
 The sitename -- e.g. `github.com`
 
 This means that you will have to remember your name, your master password, and the formatting for your the way in which you enter the sitename.
