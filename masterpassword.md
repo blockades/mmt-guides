@@ -25,9 +25,9 @@ This means that you will have to remember your name, your master password, and t
 
 ## 1. Installation
 
-| Android | iPhone / iPad | Windows / Linux | Mac | Any |
-|--------:|--------------:|--------:|----:|------:|----:|
-| Google Play Store | iStore | [Java .jar installer](https://ssl.masterpasswordapp.com/masterpassword-gui.jar) | [zip installer](https://ssl.masterpasswordapp.com/masterpassword-mac.zip) | [web app](https://js.masterpasswordapp.com/)
+Android | iPhone / iPad | Windows / Linux | Mac | Any
+:-------|:--------------|:----------------|:----|:----
+Google Play Store | iStore | [Java .jar installer](https://ssl.masterpasswordapp.com/masterpassword-gui.jar) | [zip installer](https://ssl.masterpasswordapp.com/masterpassword-mac.zip) | [web app](https://js.masterpasswordapp.com/)
 
 Select the relevant installer.
 
