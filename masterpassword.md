@@ -40,14 +40,19 @@ Select the relevant installer.
 **Linux**
 * Run the `.jar` file with `java -jar /path/to/file.jar`
 
-If you use the [webapp](https://js.masterpasswordapp.com/), right click and save the HTML page locally, disconnect from the internet, then run the `index.html` file.
+**WebApp**
+* Right click and save the HTML page locally
+* Disconnect from the internet
+* Open the `index.html` file
+
+_TODO:_ MacOS
 
 ## 2. Store a password
 
 * Enter name and master (memorizable) passphrase
 * Create new entry with sitename `mmt_bitcoin_multisig`
 * Ensure you choose the same algorithm type across platforms. The default option is V3 (at time of writing is the most recent). 
-* Ensure you choose 'Maximum Security' or `GeneratedMaximum`. The name of this may vary across the platform you've installed MasterPassword on. Choose the one that produces the longest password.
+* Ensure you choose `Maximum Security` or `GeneratedMaximum`. The name of this may vary across the platform you've installed MasterPassword on. Choose the one that produces the longest password.
 * It should auto generate your password as you type. When you've done the above steps, your password is complete.
 
 Depending on the platform you've installed MasterPassword on, you may have to recover your passphrase each time. On the Android App, it will save and when you 'log back in', the stored sites will be visible.
@@ -60,7 +65,7 @@ The magic of MasterPassword means that the method to [store a password](#1-store
 * Enter your name and master passphrase
 * Create a new entry with the sitename your remember, for example `github.com`
 * Select V3 algorithm type.
-* Select 'Maximum Security' or 'GeneratedMaximum'.
+* Select `Maximum Security` or `GeneratedMaximum`.
 * Copy the password
 
 ---
